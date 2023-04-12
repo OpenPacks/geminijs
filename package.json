@@ -1,0 +1,74 @@
+{
+  "name": "geminijs-monorepo",
+  "version": "0.1.0",
+  "private": false,
+  "description": "GeminiJS is a web engineering system, including a web framework, a npm package solution and a documentation site solution.",
+  "keywords": [
+    "Gemini",
+    "GeminiJS",
+    "virtualdom",
+    "vdom",
+    "library",
+    "web",
+    "ui",
+    "browser"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Nguyen Hai Nam",
+    "email": "nghainam2000@gmail.com",
+    "url": "https://github.com/NguyenHaiNam24082000"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "prepare": "husky install"
+  },
+  "prettier": "@vercel/style-guide/prettier",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "@vercel/style-guide": "^4.0.2",
+    "@vitest/ui": "^0.30.1",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "bumpp": "^9.1.0",
+    "c8": "^7.13.0",
+    "cypress": "^12.9.0",
+    "esbuild": "^0.17.16",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "execa": "^7.1.1",
+    "globby": "^13.1.4",
+    "husky": "^8.0.0",
+    "jsdom": "^21.1.1",
+    "prettier": "^2.8.7",
+    "publint": "^0.1.11",
+    "source-map": "^0.7.4",
+    "tslib": "^2.5.0",
+    "turbo": "^1.9.0",
+    "unbuild": "^1.2.0",
+    "vite": "^4.2.1",
+    "vitest": "^0.30.1"
+  },
+  "packageManager": "pnpm@7.15.0",
+  "engines": {
+    "node": ">=14.17.6",
+    "pnpm": ">=7.12.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "^18.0.35",
+      "@types/react-dom": "^18.0.11"
+    }
+  }
+}
